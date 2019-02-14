@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>e4ab614992e5990a14a53c009c611b01</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Updateprogram.java</javaLocation>
+  <jsLocation>repository/eformjs/updateprogram.js</jsLocation>
+  <cssLocation>repository/eformcss/updateprogram.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formd6db8">
+      <id>formd6db8</id>
+      <onLoadClient><![CDATA[formd6db8_onLoadClient]]></onLoadClient>
+      <Items>
+        <jqCenterRegion sid="02992b51e661fb9625ab50f6d1ec8e96">
+          <id>jqCenterRegion0b287</id>
+          <Items>
+            <jqFormArea sid="8c2fde5f4c03dd53e836a4246f5323cf">
+              <id>jqFormArea54e49</id>
+              <ds>rs1</ds>
+              <Items>
+                <jqHtmlArea sid="79f23d8830951a03ca99073613445bf7">
+                  <id>jqHtmlArea6409b</id>
+                  <hidden>true</hidden>
+                  <text>{rs1.programid}</text>
+                  <hideLabel>true</hideLabel>
+                </jqHtmlArea>
+                <jqInput sid="91cdbe0bef4c54ce588886cb79a5cc88">
+                  <id>jqInput977a0</id>
+                  <submitName>programid1</submitName>
+                  <dataName>{rs1.programid}</dataName>
+                  <label>节目序号</label>
+                </jqInput>
+                <jqInput sid="dbc009d3a79da1aa2acf2210501e8b95">
+                  <id>jqInputdd73a</id>
+                  <submitName>programname</submitName>
+                  <dataName>{rs1.programname}</dataName>
+                  <label>节目信息</label>
+                </jqInput>
+                <jqContainer sid="8df359efa21fa25772be509a888579f5">
+                  <id>jqContainera208f</id>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <jqInput sid="5ae272370eb08aa6f6cb228a736a9216">
+                      <id>jqInputd7a50</id>
+                      <submitName>imgadr</submitName>
+                      <hidden>true</hidden>
+                      <dataName>{rs1.pictureadr}</dataName>
+                    </jqInput>
+                    <imageArea sid="29c8c4cd35411061364029db13575b86">
+                      <id>jqHtmlAreac3278</id>
+                      <width>30%</width>
+                      <height>30%</height>
+                      <icon>{rs1.pictureadr}</icon>
+                      <className>picset</className>
+                    </imageArea>
+                    <jqButton sid="e7cc2d915095e1d89d150c0bf35436df">
+                      <id>jqButton3eaaf</id>
+                      <caption>重新上传图片</caption>
+                      <hidden>true</hidden>
+                      <linkto>{"formId":"5e90de05c28b415f589af487298561ff","formName":"updatepic","formType":"1","runTimeType":"parent","target":"_blank","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+                      <onClickClient><![CDATA[jqButton3eaaf_onClickClient]]></onClickClient>
+                    </jqButton>
+                  </Items>
+                </jqContainer>
+                <jqButton sid="f24d783f59784509e63e57ec0ad58e05">
+                  <id>jqButton1f2ee</id>
+                  <text>确认修改</text>
+                  <onClickClient><![CDATA[jqButton1f2ee_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[jqButton1f2ee_onClickServer]]></onClickServer>
+                  <hideLabel>true</hideLabel>
+                </jqButton>
+              </Items>
+            </jqFormArea>
+          </Items>
+        </jqCenterRegion>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="programid" showName="" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="logic">ds_rs1</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>2c22ee30379b8d30c361951f71f5a5b6</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Deleteprogram.java</javaLocation>
+  <jsLocation>repository/eformjs/deleteprogram.js</jsLocation>
+  <cssLocation>repository/eformcss/deleteprogram.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form53bf2">
+      <id>form53bf2</id>
+      <Items>
+        <jqGrid sid="c367117c12a4c86106b60e0562b7424b">
+          <id>jqGrida1f65</id>
+          <Items>
+            <loopArea sid="bba7b9b4094d706e31b2e12266df6265">
+              <id>loopAreab30fb</id>
+            </loopArea>
+          </Items>
+        </jqGrid>
+      </Items>
+    </form>
+  </Item>
+</form>
+

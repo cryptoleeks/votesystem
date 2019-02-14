@@ -1,0 +1,40 @@
+/**********************************************
+ * adminlogin CSS
+ * 
+ * @author lenovo
+ * @date 2019-01-08
+ * @id 7f3161679625d71756f2a0b21b32cf8d
+ *************************************************/
+ /*font-size可按照本页各自格式来走*/
+ /*button格式修改*/
+ .jqButton .jqButton-btn {
+    width: 180%;
+    height: 55px;
+    font-size: 36px;
+    margin-left: 370px;
+}
+/*表单修改*/
+.jqFormArea {
+	width: 150px;
+    font-size: 30px;
+}
+/*输入框格式修改*/
+.jqInput, .jqIdentity, .jqTextArea, .jqNumeric-input, .jqPassword-input, .jqTrigger-input, .jqDate-input, .jqSelectTree-input, .jqSelectList-input {
+    height: 40px;
+    font-size: 30px;
+/*    align-content: center;*/
+    width: 35%;
+    margin-left: 70px;
+}
+/*输入框标签修改*/
+.jqfa-label {
+    left: 6%;/**/
+}
+/*背景图片修改*/
+ body{
+            background: url('../../logo/newlogin.png');/*修改图片相对路径*/
+            text-align: center;/*图片位置*/
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;/*底层**以上四行直接复制即可*/
+ }

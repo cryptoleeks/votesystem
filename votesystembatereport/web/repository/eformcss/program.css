@@ -1,0 +1,36 @@
+/**********************************************
+ * program CSS
+ * 
+ * @author lenovo
+ * @date 2019-01-09
+ * @id 2c7d9463b770ea8b348b81cb4b38b66d
+ *************************************************/
+ body {
+	background: url('../../logo/show.jpg'); /*修改图片相对路径*/
+	text-align: center; /*图片位置*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /*底层**以上四行直接复制即可*/
+	/*    font-size:10em;*/
+	/* color: #000000; */
+}
+.jqButton .jqButton-btn {
+	height: 257%;
+    width: 218%;
+    font-size: 27px;
+    margin-top: 15%;
+    margin-left: 55%;
+    -webkit-border-radius: 45%;
+}
+div, span {
+    font-size: 130%;
+}
+label{
+	font-size:100%;
+}
+td {
+    font-size: 130%;
+}
+#jqButton24ee8{
+	margin-top: 33%;
+}

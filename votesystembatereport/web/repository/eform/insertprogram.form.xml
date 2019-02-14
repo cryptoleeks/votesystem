@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>2245872553796923d2217d1ce0e92158</id>
+  <configTable />
+  <defaultLocation>false</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Insertprogram.java</javaLocation>
+  <jsLocation>repository/eformjs/insertprogram.js</jsLocation>
+  <cssLocation>repository/eformcss/insertprogram.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form20855">
+      <id>form20855</id>
+      <Items>
+        <jqCenterRegion sid="0a447b98bc34d1219d8f86d1832eba3e">
+          <id>jqCenterRegione5567</id>
+          <Items>
+            <jqFormArea sid="33683bbef65f5723e02fedd03e7abe84">
+              <id>jqFormAreae5f09</id>
+              <colNum>1</colNum>
+              <Items>
+                <jqInput sid="0b2fb87dd25d40ccbb3600df3d890529">
+                  <id>jqInput81bd9</id>
+                  <submitName>programid</submitName>
+                  <label>节目序号</label>
+                </jqInput>
+                <jqInput sid="5f1877307c1610397ecc7579bc8612c5">
+                  <id>jqInputb1586</id>
+                  <submitName>programinfo</submitName>
+                  <label>节目信息</label>
+                </jqInput>
+                <jqContainer sid="72fb81fec95fc370468814321f6978df">
+                  <id>jqContainerb4dfd</id>
+                  <hideLabel>true</hideLabel>
+                  <Items>
+                    <jqInput sid="763d088e57d5bd6d40141d34e2456076">
+                      <id>jqInputcebb5</id>
+                      <caption>图片地址</caption>
+                      <submitName>imgadr</submitName>
+                      <hidden>true</hidden>
+                    </jqInput>
+                    <jqHtmlArea sid="2b0dd41c5b961e2ca29872673a990635">
+                      <id>jqHtmlArea3aed2</id>
+                      <onShow><![CDATA[jqHtmlArea3aed2_onShow]]></onShow>
+                      <text>&lt;div&gt;&#xD;
+   &lt;input type="file" id="single"  accept="image/*"/&gt;&#xD;
+    &lt;ul class="images-list"&gt;&#xD;
+&#xD;
+    &lt;/ul&gt;&#xD;
+&lt;/div&gt;&#xD;
+&#xD;
+&lt;p&gt;&#xD;
+    &lt;label&gt;读取进度：&lt;/label&gt;&lt;progress id="Progress" value="0" max="100"&gt;&lt;/progress&gt;&#xD;
+&lt;/p&gt;&#xD;
+&#xD;
+&lt;script&gt;&#xD;
+    var inputs = document.getElementsByTagName('input');&#xD;
+    var resultFiles = [];&#xD;
+&#xD;
+&#xD;
+    for(var i = 0, l = inputs.length; i &lt; l; i++) {&#xD;
+        inputs[i].onchange = function() {&#xD;
+            // 重置被选中的文件&#xD;
+            resultFiles = [];&#xD;
+            // 清空节点&#xD;
+            var imagesList = this.parentElement.nextElementSibling;&#xD;
+            imagesList.innerHTML = '';&#xD;
+            var files = this.files;&#xD;
+            // 循环附件&#xD;
+            if(files.length) {&#xD;
+                for(var i = 0, l = files.length; i &lt; l; i++) {&#xD;
+                    // 附件基本信息&#xD;
+                    var file = files[i],&#xD;
+                        type = files.type;&#xD;
+                    // fileReader读取文件&#xD;
+                    var reader = new FileReader();&#xD;
+                    reader.onload = function(e) {&#xD;
+                        console.log(e);&#xD;
+                        var img = e.target.result;&#xD;
+                        // 某些低版本的android浏览器中，读出来的base64缺少字节。&#xD;
+                        img = img.replace("data:;base64", "data:" + type + "base64");&#xD;
+//                        alert(img);&#xD;
+                        // 判断文件类型&#xD;
+                        if(!/image.[jpg|jpeg|png|gif]/.test(img)) {&#xD;
+                            alert('请上传图片');&#xD;
+                            return;&#xD;
+                        }&#xD;
+                        // 添加结果进入结果数组&#xD;
+                        resultFiles.push(img);&#xD;
+                        // 获取图片的宽高&#xD;
+                        var temImg = new Image();&#xD;
+                        temImg.src = img;&#xD;
+                        var width = temImg.width,&#xD;
+                            height = temImg.height;&#xD;
+                        console.debug(width, height);&#xD;
+                        // 可以后台交互，将img传至后台，后台放入文件中保存&#xD;
+                        // 此种方法可避免form表单提交刷新页面以及跨域问题&#xD;
+                        // 假的进度条&#xD;
+                        var proCount = 0;&#xD;
+                        var inter = setInterval(function() {&#xD;
+                            if(proCount &gt;= 10) {&#xD;
+                                clearInterval(inter);&#xD;
+                            }&#xD;
+                            document.getElementsByTagName('progress')[0].value = proCount * 10;&#xD;
+                            proCount ++;&#xD;
+                        }, 100);&#xD;
+                        // 添加到页面上&#xD;
+                        imagesList.innerHTML += '&lt;li&gt;&lt;img style="width:90%;height:90%" src="'+img+'"&gt;&lt;/li&gt;';&#xD;
+                    };&#xD;
+                    // 将文件读取为一段以 data: 开头的字符串，可作为小文件插入文档&#xD;
+                    reader.readAsDataURL(file);&#xD;
+                }&#xD;
+            }&#xD;
+        }&#xD;
+    }&#xD;
+&lt;/script&gt;</text>
+                    </jqHtmlArea>
+                    <jqButton sid="c09f7068a6ff803d9acc9920be70832b">
+                      <id>jqButtona3592</id>
+                      <text>确认上传</text>
+                      <onClickClient><![CDATA[jqButtona3592_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[jqButtona3592_onClickServer]]></onClickServer>
+                      <onMouseEnterClient><![CDATA[jqButtona3592_onMouseEnterClient]]></onMouseEnterClient>
+                    </jqButton>
+                  </Items>
+                </jqContainer>
+              </Items>
+            </jqFormArea>
+            <jqButton sid="3001a4e2982a56c681a08cd56e55637d">
+              <id>jqButton26448</id>
+              <text>确认添加</text>
+              <onClickClient><![CDATA[jqButton26448_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[jqButton26448_onClickServer]]></onClickServer>
+            </jqButton>
+          </Items>
+        </jqCenterRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

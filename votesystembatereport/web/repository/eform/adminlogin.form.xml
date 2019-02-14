@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>7f3161679625d71756f2a0b21b32cf8d</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Adminlogin.java</javaLocation>
+  <jsLocation>repository/eformjs/adminlogin.js</jsLocation>
+  <cssLocation>repository/eformcss/adminlogin.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formf6436">
+      <id>formf6436</id>
+      <Items>
+        <jqCenterRegion sid="5a05e86cae1b78a2f2d96d0043e84645">
+          <id>jqCenterRegion00a36</id>
+          <Items>
+            <jqHtmlArea sid="1fd1afa18a5631a4b08d3e04f9b3a9ed">
+              <id>jqHtmlAreaaa0c4</id>
+              <text>&lt;img src="../../logo/logo.png" alt="华宇" style="&#xD;
+    margin-left: 4%;&#xD;
+    margin-top: 4%;&#xD;
+    margin-bottom: 60%;&#xD;
+"&gt;</text>
+            </jqHtmlArea>
+            <jqFormArea sid="6f4a4acc40ef77ef09b0e41424f9cc8c">
+              <id>jqFormAreaea824</id>
+              <width>100%</width>
+              <colNum>1</colNum>
+              <labelWidth>15%</labelWidth>
+              <Items>
+                <jqInput sid="2e691633bd70e6739b10eb00d00f00d3">
+                  <id>jqInputa5db2</id>
+                  <caption>名称</caption>
+                  <submitName>adminname</submitName>
+                  <emptyTip>输入管理员用户名</emptyTip>
+                  <required>true</required>
+                  <label>用户名</label>
+                </jqInput>
+                <jqPassword sid="9bf57d0cfdc0dc046a97b697ee50749e">
+                  <id>jqPasswordd8b1d</id>
+                  <submitName>adminpassword</submitName>
+                  <required>true</required>
+                  <label>密码</label>
+                </jqPassword>
+              </Items>
+            </jqFormArea>
+            <jqButton sid="2b470141c45091e10a6fdf417fbe2a2e">
+              <id>jqButtondda81</id>
+              <text>登录</text>
+              <onClickClient><![CDATA[jqButtondda81_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[jqButtondda81_onClickServer]]></onClickServer>
+            </jqButton>
+          </Items>
+        </jqCenterRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>1a2a8e12dea4ab6e01d650e92ff8bf03</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Demo.java</javaLocation>
+  <jsLocation>repository/eformjs/demo.js</jsLocation>
+  <cssLocation>repository/eformcss/demo.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form2f2ff">
+      <id>form2f2ff</id>
+      <Items>
+        <jqCenterRegion sid="b3bde818ca96e2e2793dbbf07a9f732c">
+          <id>jqCenterRegion5669c</id>
+          <Items>
+            <jqInput sid="5e847de95cf653acea15cab47a885915">
+              <id>jqInput6b628</id>
+              <emptyTip>666</emptyTip>
+            </jqInput>
+          </Items>
+        </jqCenterRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

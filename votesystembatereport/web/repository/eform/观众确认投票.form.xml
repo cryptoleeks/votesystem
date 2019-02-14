@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>861adab9f89342682b816c5b9ca94df5</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Gzqrtp.java</javaLocation>
+  <jsLocation>repository/eformjs/gzqrtp.js</jsLocation>
+  <cssLocation>repository/eformcss/gzqrtp.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formc921d">
+      <id>formc921d</id>
+      <onUnloadClient><![CDATA[formc921d_onUnloadClient]]></onUnloadClient>
+      <Items>
+        <jqFormArea sid="9ed08b8524edcdf0488fb48266286718">
+          <id>jqFormAreabbc9f</id>
+          <hidden>true</hidden>
+          <Items>
+            <jqInput sid="5f42c592bd235b5be02e75757f8fe535">
+              <id>jqInput295ea</id>
+              <submitName>checkvote</submitName>
+              <hidden>true</hidden>
+            </jqInput>
+            <jqInput sid="3589474b88f69df244fe3db0849cde09">
+              <id>jqInput10fa1</id>
+              <submitName>tj</submitName>
+            </jqInput>
+          </Items>
+        </jqFormArea>
+        <jqHtmlArea sid="85c70b60862d99325df1f0534a65000d">
+          <id>jqHtmlAreaf406a</id>
+          <text>仅有一次投票机会，你确认投票吗？</text>
+        </jqHtmlArea>
+        <jqHorizontalBox sid="7aca3f3b2bee6244d1a4f5b1907b032b">
+          <id>jqHorizontalBox73423</id>
+          <Items>
+            <jqButton sid="3851d1dd4c48c8e363048fafa250e635">
+              <id>jqButtone6614</id>
+              <text>确认</text>
+              <onClickClient><![CDATA[jqButtone6614_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[jqButtone6614_onClickServer]]></onClickServer>
+            </jqButton>
+            <jqButton sid="87e6b7deb71da324e26b555e985db706">
+              <id>jqButtona89be</id>
+              <text>取消</text>
+              <onClickClient><![CDATA[jqButtona89be_onClickClient]]></onClickClient>
+            </jqButton>
+          </Items>
+        </jqHorizontalBox>
+      </Items>
+    </form>
+  </Item>
+</form>
+

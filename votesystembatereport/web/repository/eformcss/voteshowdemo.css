@@ -1,0 +1,126 @@
+/**********************************************
+ * voteshowdemo CSS
+ * 
+ * @author lenovo
+ * @date 2019-01-16
+ * @id dbc68060eba9a0390fab33cc4a25bcad
+ *************************************************/
+
+@font-face{
+　　font-family: "spanfont";
+　　src: url('../../font/vote.otf');
+}
+ body{
+     background:url("../../img/show-bgnew.png") no-repeat;
+     font-family: "微软雅黑";
+     background-size: 100%;
+     
+     font-size: 24px;
+     color: #fff4d1;
+ }
+ .jqHtmlArea jqHtmlArea-default votenum{
+     font-family: "微软雅黑";
+ }
+ .jqHtmlArea jqHtmlArea-default votenum{
+    text-align: center;
+ }
+ * {
+    text-align: center;
+}
+#divnum0{
+     margin-top: 17.3%;
+    margin-left: -61%;
+}
+#divname0{
+    margin-top: 7%;
+    margin-left: -60%;
+}
+#divnum1{
+        margin-top: -11.3%;
+    margin-left: -30.5%;
+}
+#divname1{
+    margin-top: 7.3%;
+    margin-left: -31%;
+}
+#divnum2{
+            margin-top: -10.9%;
+    margin-left: -0.5%;
+
+}
+#divname2{
+        margin-top: 6.9%;
+    margin-left: 0.5%;
+}
+
+
+
+#divnum3{
+               margin-top: -11.1%;
+    margin-left: 29.5%;
+}
+#divname3{
+    margin-left: 30%;
+    margin-top: 7%;
+}
+
+
+
+
+#divnum4{
+           margin-left: 60%;
+    margin-top: -11%;
+}
+#divname4{
+        margin-left: 60%;
+    margin-top: 7%;
+}
+#divnum5{
+     margin-top: 5.5%;
+    margin-left: -60.5%;
+
+}
+#divname5{
+    margin-left:-60%;
+           margin-top: 7%;
+}
+#divnum6{
+               margin-left: -30%;
+    margin-top: -11.3%;
+}
+#divname6{
+    margin-left: -30%;
+    margin-top: 7.2%;
+    
+}
+#divnum7{
+           margin-left: 0%;
+    margin-top: -11.1%;
+}
+#divname7{
+    margin-top: 7%;
+}
+#divnum8{
+        margin-top: -11.2%;
+           margin-left: 30%;
+}
+#divname8{
+        margin-left: 29.5%;
+    margin-top: 7.1%;
+}
+#divnum9{
+    margin-top: -11%;
+           margin-left: 60%;
+}
+#divname9{
+        margin-left: 61%;
+    margin-top: 7.1%;
+}
+.name{
+    font-family: "spanfont";
+    font-size: 18px;
+}
+/* .num{
+    font-family: "spanfont";
+    font-size: 21px;
+} */

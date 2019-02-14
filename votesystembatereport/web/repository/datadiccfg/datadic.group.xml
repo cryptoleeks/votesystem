@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups>
+  <group>
+    <cid>3af5ec3adebeeadff81585232c1aec30</cid>
+    <dbName>public</dbName>
+    <desc />
+    <showName>public</showName>
+    <tables>
+      <table key="" tableName="admin" />
+      <table key="" tableName="program" />
+      <table key="" tableName="user" />
+    </tables>
+  </group>
+</groups>
+

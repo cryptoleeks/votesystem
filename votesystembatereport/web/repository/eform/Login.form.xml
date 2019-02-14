@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>8326a048d4a16f2e2edc42cc97f4129c</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Login.java</javaLocation>
+  <jsLocation>repository/eformjs/Login.js</jsLocation>
+  <cssLocation>repository/eformcss/Login.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formc50f2">
+      <id>formc50f2</id>
+      <Items>
+        <jqCenterRegion sid="47caff5c9f6a64f99cd865914b2dd114">
+          <id>jqCenterRegion95333</id>
+          <Items>
+            <jqFormArea sid="22195f4ac0dbab96e5d22e3b3bc00cff">
+              <id>jqFormArea432e7</id>
+              <colNum>1</colNum>
+              <colWidths>100%</colWidths>
+              <labelWidth>22%</labelWidth>
+              <Items>
+                <jqHtmlArea sid="90afa1610183f83a4deee9310b08a09e">
+                  <id>jqHtmlAreac952b</id>
+                  <text>&lt;span style="    color: #fff4d1;&#xD;
+    font-size:45px;"&gt;&#xD;
+&lt;img src="../../logo/logo.png" alt="华宇" style="&#xD;
+         margin-left: -22%;&#xD;
+    margin-top: 5%;&#xD;
+"&gt;&#xD;
+&lt;/sapn&gt;</text>
+                  <label />
+                </jqHtmlArea>
+                <jqInput sid="59ce3710e271532de7b2c2d3a15af5b8">
+                  <id>jqInput3aad1</id>
+                  <caption>username</caption>
+                  <submitName>username</submitName>
+                  <width>35%</width>
+                  <label>姓名</label>
+                </jqInput>
+                <jqHtmlArea sid="52890568084dc674f3a9498d1be1574f">
+                  <id>jqHtmlArea23810</id>
+                  <text>&lt;span id="username-hint" style="color: #f6e070; font-size:50px;font-family: cursive;"&gt;&lt;/span&gt;</text>
+                  <label />
+                </jqHtmlArea>
+                <jqButton sid="1ec1100355753cf2f2c9bcea71cbd9fc">
+                  <id>jqButton73f6d</id>
+                  <caption>submit</caption>
+                  <height>20%</height>
+                  <text>登录</text>
+                  <onClickClient><![CDATA[jqButton73f6d_onClickClient]]></onClickClient>
+                  <onClickServer><![CDATA[jqButton73f6d_onClickServer]]></onClickServer>
+                  <label>登录按钮</label>
+                  <hideLabel>true</hideLabel>
+                </jqButton>
+              </Items>
+            </jqFormArea>
+          </Items>
+        </jqCenterRegion>
+      </Items>
+    </form>
+  </Item>
+</form>
+

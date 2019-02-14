@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>3ef758846bdbfbf7572859ccfcb056a6</id>
+  <configTable>
+    <table table="admin" />
+    <table table="program" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Admin.java</javaLocation>
+  <jsLocation>repository/eformjs/admin.js</jsLocation>
+  <cssLocation>repository/eformcss/admin.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formcbbde">
+      <id>formcbbde</id>
+      <onLoadClient><![CDATA[formcbbde_onLoadClient]]></onLoadClient>
+      <onShow><![CDATA[formcbbde_onShow]]></onShow>
+      <Items>
+        <jqHtmlArea sid="54da248bc78f64eaf19d4dd7ef4f0f59">
+          <id>jqHtmlArea4e5f2</id>
+          <caption>selectnamejp</caption>
+          <text>目前观众可投票个数：{rs1.selectnum}个</text>
+        </jqHtmlArea>
+        <jqButton sid="2b0f6a3cb124fa4be7246e6ab7516730">
+          <id>jqButtond48d1</id>
+          <width>240</width>
+          <height>30</height>
+          <text>是否修改观众可投票的个数</text>
+          <pressed>true</pressed>
+          <linkto>{"formId":"99eb3c4abb57f109e80a5b4e58e93846","formName":"修改投票个数","formType":"1","runTimeType":"insert","target":"_window","targetWidth":"500%","targetHeight":"200%","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+          <onClickClient><![CDATA[jqButtond48d1_onClickClient]]></onClickClient>
+        </jqButton>
+        <jqButton sid="841711048f4a0ae629a20dff37dfb48e">
+          <id>jqButton0cb50</id>
+          <width />
+          <height>30</height>
+          <text>节目管理</text>
+          <onClickClient><![CDATA[jqButton0cb50_onClickClient]]></onClickClient>
+        </jqButton>
+        <jqHorizontalBox sid="8e9ef50924fa5355a9d3bb8abea2d958">
+          <id>jqHorizontalBoxbe900</id>
+          <Items>
+            <jqButton sid="c5c86d7fcd3ed82a3fc467cb9adb613a">
+              <id>jqButtondf647</id>
+              <width>120%</width>
+              <height>30</height>
+              <text>开始投票</text>
+              <onClickClient><![CDATA[jqButtondf647_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[jqButtondf647_onClickServer]]></onClickServer>
+            </jqButton>
+            <jqButton sid="4d540beac33b7c955bfdefbea3c9d84b">
+              <id>jqButtona0bbd</id>
+              <width>120%</width>
+              <height>30</height>
+              <text>结束投票</text>
+              <onClickClient><![CDATA[jqButtona0bbd_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[jqButtona0bbd_onClickServer]]></onClickServer>
+            </jqButton>
+          </Items>
+        </jqHorizontalBox>
+        <jqGrid sid="ba352fd72788af5850c2f36340841d67">
+          <id>jqGrida2f7a</id>
+          <ds>rs2</ds>
+          <height />
+          <isPageSplit>false</isPageSplit>
+          <onShow><![CDATA[jqGrida2f7a_onShow]]></onShow>
+          <isShowRefresh>false</isShowRefresh>
+          <isShowPageInfo>false</isShowPageInfo>
+          <showFooter>false</showFooter>
+          <onLoad><![CDATA[jqGrida2f7a_onLoad]]></onLoad>
+          <Items>
+            <jqColumnString sid="59f88501dd9d78d0f3d509929432f091">
+              <id>jqColumnStringprogramid</id>
+              <dataName>{rs2.programid}</dataName>
+              <label>序号</label>
+              <inherittbl>program</inherittbl>
+              <inheritfld>programid</inheritfld>
+              <width>10</width>
+            </jqColumnString>
+            <jqColumnString sid="639dcba8a55a6f7c2769f7eb68a38574">
+              <id>jqColumnStringprogramname</id>
+              <dataName>{rs2.programname}</dataName>
+              <label>节目名称</label>
+              <inherittbl>program</inherittbl>
+              <inheritfld>programname</inheritfld>
+            </jqColumnString>
+            <jqColumnCheckBox sid="ecab8f5c2bfd43fb331bdadf40c75e1c">
+              <id>jqColumnCheckBoxd1898</id>
+              <caption>admincb</caption>
+              <dataName>{rs2.programid}</dataName>
+              <text>当前票数:{rs2.programnum}票</text>
+              <label>投票区(勾选为十票)</label>
+              <isEllipsis>false</isEllipsis>
+              <onShow><![CDATA[jqColumnCheckBoxd1898_onShow]]></onShow>
+              <onClickSingleClient><![CDATA[jqColumnCheckBoxd1898_onClickSingleClient]]></onClickSingleClient>
+              <onClickSingleServer><![CDATA[jqColumnCheckBoxd1898_onClickSingleServer]]></onClickSingleServer>
+            </jqColumnCheckBox>
+            <jqColumnNumeric sid="46c8b741a5d9b5395851d447c48a5d77">
+              <id>jqColumnNumericprogramnum</id>
+              <hidden>true</hidden>
+              <dataName>{rs2.programnum}</dataName>
+              <inherittbl>program</inherittbl>
+              <inheritfld>programnum</inheritfld>
+            </jqColumnNumeric>
+          </Items>
+        </jqGrid>
+        <jqButton sid="9cf51246fb027b30478dc47ea4679f84">
+          <id>jqButtonb970a</id>
+          <width />
+          <height>30</height>
+          <text>提交投票结果</text>
+          <onClickClient><![CDATA[jqButtonb970a_onClickClient]]></onClickClient>
+          <onClickServer><![CDATA[jqButtonb970a_onClickServer]]></onClickServer>
+        </jqButton>
+        <jqGrid sid="b10a3a828905b901b0612c96fed38d89">
+          <id>jqGrid76fd7</id>
+          <hidden>true</hidden>
+          <ds>rs1</ds>
+          <isPageSplit>false</isPageSplit>
+          <pageCount />
+          <stepCount />
+          <isShowRefresh>false</isShowRefresh>
+          <isShowPageInfo>false</isShowPageInfo>
+          <showHeader>false</showHeader>
+          <showFooter>false</showFooter>
+          <addRowSelCss>false</addRowSelCss>
+          <Items>
+            <jqColumnString sid="d2f42fa816be8af410c0667e3995cbe5">
+              <id>jqColumnStringselectnum</id>
+              <hidden>true</hidden>
+              <dataName>{rs1.selectnum}</dataName>
+              <inherittbl>admin</inherittbl>
+              <inheritfld>selectnum</inheritfld>
+            </jqColumnString>
+            <jqColumnString sid="cf1d6e89d5eb1a7ebf3fbf282d2da4b3">
+              <id>jqColumnStringstate</id>
+              <show>false</show>
+              <dataName>{rs1.state}</dataName>
+              <inherittbl>admin</inherittbl>
+              <inheritfld>state</inheritfld>
+            </jqColumnString>
+            <jqColumnString sid="7d697e1a735d9a2f1d4a99418389dee8">
+              <id>jqColumnStringadminname</id>
+              <show>false</show>
+              <dataName>{rs1.adminname}</dataName>
+              <inherittbl>admin</inherittbl>
+              <inheritfld>adminname</inheritfld>
+            </jqColumnString>
+            <jqColumnString sid="fa9b34ce8351c408bb6fce9835739f8e">
+              <id>jqColumnStringadminpassword</id>
+              <show>false</show>
+              <dataName>{rs1.adminpassword}</dataName>
+              <inherittbl>admin</inherittbl>
+              <inheritfld>adminpassword</inheritfld>
+            </jqColumnString>
+          </Items>
+        </jqGrid>
+        <jqFormArea sid="97c5c92e5eb75d3387f7c5f255ac11ba">
+          <id>jqFormAreacda9b</id>
+          <hidden>true</hidden>
+          <Items>
+            <jqInput sid="9a57ccdaf812c9def13f3d2119bac0e8">
+              <id>jqInput76295</id>
+              <submitName>checkname</submitName>
+              <hidden>true</hidden>
+            </jqInput>
+          </Items>
+        </jqFormArea>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    {db.admin}.selectnum,&#xD;
+    {db.admin}.state,&#xD;
+    {db.admin}.adminname,&#xD;
+    {db.admin}.adminpassword&#xD;
+FROM&#xD;
+    {db.admin}</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">SELECT&#xD;
+    {db.program}.programid,&#xD;
+    {db.program}.programname,&#xD;
+    {db.program}.programnum&#xD;
+FROM&#xD;
+    {db.program}&#xD;
+    &#xD;
+    order by {db.program}.programid</ds>
+  </dslist>
+</form>
+

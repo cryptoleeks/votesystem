@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>2c7d9463b770ea8b348b81cb4b38b66d</id>
+  <configTable>
+    <table table="program" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Program.java</javaLocation>
+  <jsLocation>repository/eformjs/program.js</jsLocation>
+  <cssLocation>repository/eformcss/program.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form62ac3">
+      <id>form62ac3</id>
+      <onLoadClient><![CDATA[form62ac3_onLoadClient]]></onLoadClient>
+      <Items>
+        <jqButton sid="2160e05621350fd64ce660aa7fdcacec">
+          <id>jqButton24ee8</id>
+          <caption>添加</caption>
+          <text>添加</text>
+          <linkto>{"formId":"2245872553796923d2217d1ce0e92158","formName":"insertprogram","formType":"1","runTimeType":"insert","target":"_window","targetWidth":"300","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"true","forceContextPath":"true"}</linkto>
+        </jqButton>
+        <jqFormArea sid="964bdb52e112b00376585829c40afd1b">
+          <id>jqFormArea68e51</id>
+          <ds>rs1</ds>
+          <Items>
+            <jqGrid sid="f4a878439da6e50b791e4e809fe355e5">
+              <id>jqGridd64d2</id>
+              <ds>rs1</ds>
+              <height>100%</height>
+              <isPageSplit>false</isPageSplit>
+              <hideLabel>true</hideLabel>
+              <Items>
+                <jqColumnLineNum sid="43fcda5683969bdafce34b123b7094c1">
+                  <id>jqColumnLineNum73b4e</id>
+                  <label>节目</label>
+                </jqColumnLineNum>
+                <jqColumnNumeric sid="59f5ce11306e9efd01fa0681797648e2">
+                  <id>jqColumnNumericf64fb</id>
+                  <hidden>true</hidden>
+                  <dataName>{rs1.programid}</dataName>
+                </jqColumnNumeric>
+                <jqColumnString sid="daf4b99da65c0c638f97fa48323f9b1a">
+                  <id>jqColumnString44e0e</id>
+                  <dataName>{rs1.programname}</dataName>
+                </jqColumnString>
+                <jqColumnDetail sid="9fc1919189bed4069128dc5856c3ce7e">
+                  <id>jqColumnDetailb09d1</id>
+                  <Items>
+                    <imageArea sid="4d4d2eb5d60092488817362a6224a056">
+                      <id>jqCharteed3e</id>
+                      <width>300px</width>
+                      <height>300px</height>
+                      <icon>{rs1.pictureadr}</icon>
+                      <imgWidth>300px</imgWidth>
+                      <imgHeight>300px</imgHeight>
+                    </imageArea>
+                  </Items>
+                </jqColumnDetail>
+                <jqColumnOper sid="f6a62c3d319af15d4142e51e7c48da10">
+                  <id>jqColumnOper05c1e</id>
+                  <Items>
+                    <jqButton sid="c1594d985494b07358c13ba845f115ef">
+                      <id>jqButton5a46a</id>
+                      <text>修改</text>
+                      <linkto>{"formId":"e4ab614992e5990a14a53c009c611b01","formName":"updateprogram","formType":"1","params":{"programid":"{rs1.programid}"},"runTimeType":"insert","target":"_window","targetWidth":"210","targetHeight":"150","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"2","title":"修改节目信息","wincfg":"","fullScreen":"true","forceContextPath":"true"}</linkto>
+                      <onClickClient><![CDATA[jqButton5a46a_onClickClient]]></onClickClient>
+                    </jqButton>
+                    <jqButton sid="0e4bff1ec9d463ee8622a7c07765a8c3">
+                      <id>jqButton13d30</id>
+                      <text>删除</text>
+                      <onClickClient><![CDATA[jqButton13d30_onClickClient]]></onClickClient>
+                      <onClickServer><![CDATA[jqButton13d30_onClickServer]]></onClickServer>
+                      <onMouseEnterServer><![CDATA[jqButton13d30_onMouseEnterServer]]></onMouseEnterServer>
+                    </jqButton>
+                  </Items>
+                </jqColumnOper>
+              </Items>
+            </jqGrid>
+          </Items>
+        </jqFormArea>
+        <jqButton sid="a40053a6d7394ce6d4936808c91df077">
+          <id>jqButtoneadca</id>
+          <width>120</width>
+          <text>返回主界面</text>
+          <onClickClient><![CDATA[jqButtoneadca_onClickClient]]></onClickClient>
+        </jqButton>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    {db.program}.programid,&#xD;
+     {db.program}.pictureadr,&#xD;
+    {db.program}.programname,&#xD;
+    {db.program}.programnum&#xD;
+FROM&#xD;
+    {db.program}&#xD;
+&#xD;
+order by {db.program}.programid</ds>
+    <ds dsName="dataSource" name="rs2" type="logic">ds_rs2</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>411fa82b47f7c437dc75f87d67e3c7b9</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Success.java</javaLocation>
+  <jsLocation>repository/eformjs/success.js</jsLocation>
+  <cssLocation>repository/eformcss/success.css</cssLocation>
+  <descript />
+  <needLogin>true</needLogin>
+  <Item version="2">
+    <form sid="formebbb3">
+      <id>formebbb3</id>
+      <Items>
+        <jqTableLayout sid="59d76cf565b35ecea54365f283565e4f">
+          <id>jqTableLayoutc69c5</id>
+          <height>100%</height>
+          <Items>
+            <jqContainer sid="37703f3a4ffbfba561f95af84c57f32e">
+              <id>jqContainer4cd88</id>
+              <width>100%</width>
+              <height>100%</height>
+              <Items>
+                <jqHtmlArea sid="05e4e575ddebb3d8b79d2d13c1ae54b7">
+                  <id>jqHtmlArea70e87</id>
+                  <width>100%</width>
+                  <height>10%</height>
+                  <text>&lt;span style="color: blue; font-size:30px"&gt;投票展示&lt;/span&gt;</text>
+                  <align>center</align>
+                </jqHtmlArea>
+                <jqChart sid="d6d6ea06a769f7cc3a9225f61d6965eb">
+                  <id>jqChart6799e</id>
+                  <caption>投票展示</caption>
+                  <width>100%</width>
+                  <height>90%</height>
+                  <onShow><![CDATA[jqChart6799e_onShow]]></onShow>
+                  <chartConf>{"borderColor":"#ffffff","canvasBgColor":"#ffffff","bgColor":"#ffffff","bgAlpha":"#ffff","chartType":"Column3D","showBorder":"0","animation":"0"}</chartConf>
+                  <loadType>ajax</loadType>
+                  <updateTime>1</updateTime>
+                  <onLoad><![CDATA[jqChart6799e_onLoad]]></onLoad>
+                </jqChart>
+              </Items>
+            </jqContainer>
+          </Items>
+        </jqTableLayout>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    {db.program}.programid,&#xD;
+     {db.program}.pictureadr,&#xD;
+    {db.program}.programname,&#xD;
+    {db.program}.programnum&#xD;
+FROM&#xD;
+    {db.program}</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,29 @@
+/**********************************************
+ * ProgramSelectNum CSS
+ * 
+ * @author ����
+ * @date 2019-01-09
+ * @id 99eb3c4abb57f109e80a5b4e58e93846
+ *************************************************/
+  .jqButton .jqButton-btn {
+    width: 170%;
+    height: 45px;
+    font-size: 30px;
+    margin-left: 154%;
+    margin-top: 10%;
+}
+#jqInputselectnum_label{
+	width: 30%;
+    margin-top: 5%;
+    height: 38px;
+    font-size: 160%;
+}
+#jqInputselectnum_div{
+	margin-top: 8%;
+    margin-left: 0%;
+    width: 51%;
+}
+.window .panel-tool-close {
+    width: 0px;
+    height: 0px;
+}

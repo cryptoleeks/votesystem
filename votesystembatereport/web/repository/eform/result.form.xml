@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>7409bde5ec66fe4e5b38085fe3a1f048</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Result.java</javaLocation>
+  <jsLocation>repository/eformjs/result.js</jsLocation>
+  <cssLocation>repository/eformcss/result.css</cssLocation>
+  <descript />
+  <needLogin>true</needLogin>
+  <Item version="2">
+    <form sid="form07631">
+      <id>form07631</id>
+      <onLoadClient><![CDATA[form07631_onLoadClient]]></onLoadClient>
+      <onLoadServer><![CDATA[form07631_onLoadServer]]></onLoadServer>
+      <Items>
+        <jqCenterRegion sid="1b5956b5d53339cc0c7d7b5167c5a572">
+          <id>jqCenterRegion4a8e6</id>
+          <Items>
+            <jqHtmlArea sid="6c80cef9500bf145489a000ecab4f344">
+              <id>jqHtmlArea12ec2</id>
+              <text>&lt;span style="    font-family: cursive;&#xD;
+    color: #bf1a20;&#xD;
+    font-weight: 900;"&gt;节目投票统计&lt;/span&gt;</text>
+              <align>center</align>
+            </jqHtmlArea>
+            <loopArea sid="3216f91fd665fb3d2b1ecf8d21ad19cb">
+              <id>loopArea71a48</id>
+              <ds>rs1</ds>
+              <onShow><![CDATA[loopArea71a48_onShow]]></onShow>
+              <dynamicData><![CDATA[loopArea71a48_dynamicData]]></dynamicData>
+              <Items>
+                <jqVerticalBox sid="30e97e554127934e9f15151b332c7fe4">
+                  <id>jqVerticalBoxa8f5e</id>
+                  <hidden>true</hidden>
+                  <width>50%</width>
+                  <onShow><![CDATA[jqVerticalBoxa8f5e_onShow]]></onShow>
+                </jqVerticalBox>
+                <jqHorizontalBox sid="01771659479f041390a157bbf93246c2">
+                  <id>jqHorizontalBoxd2066</id>
+                  <width>100%</width>
+                  <Items>
+                    <jqHtmlArea sid="0251d9e98bcb04f8b8ef85d43d685781">
+                      <id>jqHtmlAreaad31c</id>
+                      <onShow><![CDATA[jqHtmlAreaad31c_onShow]]></onShow>
+                      <text>{rs1.programid}.{rs1.programname}&#xD;
+ &lt;div class="container"&gt; &#xD;
+   &lt;div id="bar{rs1.programid}" class="bar" style="width:0%;"&gt;&#xD;
+&lt;span id="total{rs1.programid}" class="total"&gt;&lt;/span&gt;&#xD;
+ &lt;/div&gt;  &#xD;
+  &lt;/div&gt;</text>
+                      <ellipsis>true</ellipsis>
+                    </jqHtmlArea>
+                    <jqHtmlArea sid="0e0304725816e5fe0487f5de141b6977">
+                      <id>jqHtmlAreac6679</id>
+                      <text>总票数：{rs1.programnum}票</text>
+                    </jqHtmlArea>
+                    <jqImage sid="5096fd56b0118ddce9587db6b7bd2f8d">
+                      <id>jqImagedd4ac</id>
+                      <hidden>true</hidden>
+                      <width>80%</width>
+                      <icon>/logo/logo.png</icon>
+                      <themeStyle />
+                    </jqImage>
+                  </Items>
+                </jqHorizontalBox>
+              </Items>
+            </loopArea>
+          </Items>
+        </jqCenterRegion>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    {db.program}.programid,&#xD;
+     {db.program}.pictureadr,&#xD;
+    {db.program}.programname,&#xD;
+    {db.program}.programnum&#xD;
+FROM&#xD;
+    {db.program}&#xD;
+    &#xD;
+order by {db.program}.programid</ds>
+  </dslist>
+</form>
+

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>dbc68060eba9a0390fab33cc4a25bcad</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Voteshowdemo.java</javaLocation>
+  <jsLocation>repository/eformjs/voteshowdemo.js</jsLocation>
+  <cssLocation>repository/eformcss/voteshowdemo.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="form70caf">
+      <id>form70caf</id>
+      <importFile />
+      <onLoadClient><![CDATA[form70caf_onLoadClient]]></onLoadClient>
+      <onLoadServer><![CDATA[form70caf_onLoadServer]]></onLoadServer>
+      <Items>
+        <jqContainer sid="473d0c8d2c2ab832a845a0f1ee88bfdf">
+          <id>jqContainer25e13</id>
+          <Items>
+            <jqCenterRegion sid="a6d2fd18bbdd0886c15e0bbe6d859d5e">
+              <id>jqCenterRegiond6f97</id>
+              <Items>
+                <jqTableLayout sid="1b5cdf44c95a326e3f02c62134f58845">
+                  <id>jqTableLayoutc1c4c</id>
+                  <hidden>true</hidden>
+                  <show>false</show>
+                  <width>80%</width>
+                  <colNum>5</colNum>
+                  <borderWidth>0</borderWidth>
+                  <borderStyle>dashed</borderStyle>
+                  <cellpadding>0</cellpadding>
+                  <tableStyle>text-align: center;</tableStyle>
+                  <Items>
+                    <loopArea sid="fd0c1548d7b9987eb16849add2c5c0a0">
+                      <id>loopArea6cccb</id>
+                      <ds>rs1</ds>
+                      <Items>
+                        <jqContainer sid="e3b2d34069f29842e3c0420a2fa87442">
+                          <id>jqContainer0f11b</id>
+                          <Items>
+                            <jqVerticalBox sid="7e012126065fe9ab4d2417dafe466148">
+                              <id>jqVerticalBox7f3cb</id>
+                              <Items>
+                                <jqContainer sid="1852af0c4afa2e76357859bf490d9a77">
+                                  <id>jqContainer2eac6</id>
+                                  <caption>票数</caption>
+                                  <Items>
+                                    <jqHtmlArea sid="7d1f4f46e462c45054cd319266ee95f5">
+                                      <id>jqTextArea3a629</id>
+                                      <className>votenum</className>
+                                      <text>{rs1.programnum}</text>
+                                      <align>center</align>
+                                    </jqHtmlArea>
+                                  </Items>
+                                </jqContainer>
+                                <jqContainer sid="371c35f5124a9cc2be7f35f1edface40">
+                                  <id>jqContainer568f9</id>
+                                  <Items>
+                                    <jqHtmlArea sid="9cdf3878ec81411a98db0736821f395b">
+                                      <id>jqHtmlAreac6050</id>
+                                      <text>{rs1.programname}</text>
+                                      <align>center</align>
+                                    </jqHtmlArea>
+                                  </Items>
+                                </jqContainer>
+                              </Items>
+                            </jqVerticalBox>
+                          </Items>
+                        </jqContainer>
+                      </Items>
+                    </loopArea>
+                    <loopArea sid="48614be26366c7c3e8cee0dfc0dd7b3f">
+                      <id>loopArea03118</id>
+                      <show>false</show>
+                      <ds>rs1</ds>
+                      <Items>
+                        <jqVerticalBox sid="79810ece9e0d1d2355aeef2d74b94aa0">
+                          <id>jqVerticalBox9d28b</id>
+                          <className>td1</className>
+                        </jqVerticalBox>
+                        <jqVerticalBox sid="ba3b35d97f2bf8c138d8cf52ce7d1426">
+                          <id>jqVerticalBoxd8cd4</id>
+                          <className>td2</className>
+                        </jqVerticalBox>
+                        <jqCenterRegion sid="2d6850a2ebc75ced51a979069f48537f">
+                          <id>jqCenterRegion3e124</id>
+                        </jqCenterRegion>
+                      </Items>
+                    </loopArea>
+                  </Items>
+                </jqTableLayout>
+                <jqContainer sid="2c978e9c4ffde09040c147e3456cf59d">
+                  <id>jqContainerb062f</id>
+                  <Items>
+                    <jqHtmlArea sid="7024a64372bb117f9b49b0bd18391da2">
+                      <id>jqHtmlAreadfdea</id>
+                      <hidden>true</hidden>
+                      <text>&lt;script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"&gt;&lt;/script&gt;&#xD;
+&lt;script type="text/javascript"&gt;&#xD;
+   $youziku.load(".num", "ff8fe5d8e13740f1a898aa4419bd8a0f", "BigruixianBoldkGBV1");&#xD;
+   /*$youziku.load("#id1,.class1,h1", "ff8fe5d8e13740f1a898aa4419bd8a0f", "BigruixianBoldkGBV1");*/&#xD;
+   /*．．．*/&#xD;
+   $youziku.draw();&#xD;
+&lt;/script&gt;</text>
+                    </jqHtmlArea>
+                  </Items>
+                </jqContainer>
+              </Items>
+            </jqCenterRegion>
+          </Items>
+        </jqContainer>
+      </Items>
+    </form>
+  </Item>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    {db.program}.programid,&#xD;
+     {db.program}.pictureadr,&#xD;
+    {db.program}.programname,&#xD;
+    {db.program}.programnum&#xD;
+FROM&#xD;
+    {db.program}&#xD;
+order by {db.program}.programnum desc&#xD;
+ limit  5  offset  0;</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">SELECT&#xD;
+    {db.program}.programid,&#xD;
+     {db.program}.pictureadr,&#xD;
+    {db.program}.programname,&#xD;
+    {db.program}.programnum&#xD;
+FROM&#xD;
+    {db.program}&#xD;
+order by {db.program}.programnum desc&#xD;
+ limit  5  offset  5;</ds>
+  </dslist>
+</form>
+

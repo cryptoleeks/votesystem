@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>ca21ba559e07fe17b00b75e0dd1925e1</id>
+  <configTable>
+    <table table="admin" />
+    <table table="program" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Vote.java</javaLocation>
+  <jsLocation>repository/eformjs/vote.js</jsLocation>
+  <cssLocation>repository/eformcss/vote.css</cssLocation>
+  <descript />
+  <needLogin>true</needLogin>
+  <Item version="2">
+    <form sid="form86758">
+      <id>form86758</id>
+      <onLoadClient><![CDATA[form86758_onLoadClient]]></onLoadClient>
+      <Items>
+        <jqCenterRegion sid="16625bb9cfcbd97d4237f6293f7799fd">
+          <id>jqCenterRegionb1752</id>
+          <Items>
+            <jqFormArea sid="58be29448647174927a2c96475ea9bc4">
+              <id>jqFormArea1e16a</id>
+              <ds>rs1</ds>
+              <colNum>1</colNum>
+              <Items>
+                <jqInput sid="54171cbc4b47d886d0c507720a99b22a">
+                  <id>jqInput9f4d8</id>
+                  <submitName>votecheck</submitName>
+                  <hidden>true</hidden>
+                </jqInput>
+              </Items>
+            </jqFormArea>
+            <jqHtmlArea sid="a28a014bd5416c2ed5f3335056af4fd9">
+              <id>jqHtmlArea69f0a</id>
+              <text>&lt;span style="    font-size: 250%;&#xD;
+    color: red;&#xD;
+    margin-left: 5%;&#xD;
+    float: left;&#xD;
+    font-family: cursive;"&gt; &#xD;
+    节目投票&#xD;
+&lt;/span&gt;</text>
+              <align>center</align>
+            </jqHtmlArea>
+            <jqGrid sid="2c58c66c978f767fbe2187b797224529">
+              <id>jqGridcd761</id>
+              <ds>rs1</ds>
+              <height>40%</height>
+              <isPageSplit>false</isPageSplit>
+              <isShowRefresh>false</isShowRefresh>
+              <isShowPageInfo>false</isShowPageInfo>
+              <emptyDataTip>联系管理员添加数据</emptyDataTip>
+              <showFooter>false</showFooter>
+              <onLoad><![CDATA[jqGridcd761_onLoad]]></onLoad>
+              <Items>
+                <jqColumnString sid="520e73ff032155e3718cac8954804bb0">
+                  <id>jqColumnStringprogramid</id>
+                  <dataName>{rs1.programid}</dataName>
+                  <label />
+                  <inherittbl>program</inherittbl>
+                  <inheritfld>programid</inheritfld>
+                  <width>10%</width>
+                </jqColumnString>
+                <jqColumnString sid="273d3a30d25263e5f09165632879ab2b">
+                  <id>jqColumnStringprogramname</id>
+                  <dataName>{rs1.programname}</dataName>
+                  <label />
+                  <inherittbl>program</inherittbl>
+                  <inheritfld>programname</inheritfld>
+                  <width>40%</width>
+                  <isEllipsis>false</isEllipsis>
+                </jqColumnString>
+                <jqColumnOper sid="8ba950f880c6885ec79c07e3e7772eaa">
+                  <id>jqColumnOperf6169</id>
+                  <hidden>true</hidden>
+                  <label>图片展示</label>
+                  <width>20%</width>
+                  <textAlign>center</textAlign>
+                  <Items>
+                    <jqImage sid="4f20c948dc621e3567b9aaeddf675f9f">
+                      <id>jqImagee98f5</id>
+                      <icon>{rs1.pictureadr}</icon>
+                    </jqImage>
+                  </Items>
+                </jqColumnOper>
+                <jqColumnString sid="7ca09aa4dae229bf1721f159d6983dc4">
+                  <id>jqColumnStringselectnum</id>
+                  <hidden>true</hidden>
+                  <dataName>{rs2.selectnum}</dataName>
+                  <inherittbl>admin</inherittbl>
+                  <inheritfld>selectnum</inheritfld>
+                </jqColumnString>
+                <jqColumnCheckBox sid="813e282701e5bb47143d27a0ec6dda46">
+                  <id>jqColumnCheckBox2fbdd</id>
+                  <caption>admincb</caption>
+                  <dataName>{rs1.programid}</dataName>
+                  <text>当前票数：{rs1.programnum}票</text>
+                  <width>30%</width>
+                  <onClickSingleClient><![CDATA[jqColumnCheckBox2fbdd_onClickSingleClient]]></onClickSingleClient>
+                  <onClickSingleServer><![CDATA[jqColumnCheckBox2fbdd_onClickSingleServer]]></onClickSingleServer>
+                </jqColumnCheckBox>
+              </Items>
+            </jqGrid>
+            <jqButton sid="8b21667f910d3d03315645b0302d0051">
+              <id>jqButtonab045</id>
+              <caption>submit</caption>
+              <width>41%</width>
+              <height>4%</height>
+              <text>投票</text>
+              <pressed>true</pressed>
+              <onClickClient><![CDATA[jqButtonab045_onClickClient]]></onClickClient>
+              <onClickServer><![CDATA[jqButtonab045_onClickServer]]></onClickServer>
+            </jqButton>
+          </Items>
+        </jqCenterRegion>
+      </Items>
+    </form>
+  </Item>
+  <params>
+    <param name="username" showName="" value="" pvalue="" />
+  </params>
+  <dslist>
+    <ds dsName="dataSource" name="rs1" type="sql">SELECT&#xD;
+    {db.program}.programid,&#xD;
+     {db.program}.pictureadr,&#xD;
+    {db.program}.programname,&#xD;
+    {db.program}.programnum&#xD;
+FROM&#xD;
+    {db.program}&#xD;
+    &#xD;
+order by {db.program}.programid</ds>
+    <ds dsName="dataSource" name="rs2" type="sql">SELECT&#xD;
+    {db.admin}.selectnum,&#xD;
+    {db.admin}.state,&#xD;
+    {db.admin}.adminname,&#xD;
+    {db.admin}.adminpassword&#xD;
+FROM&#xD;
+    {db.admin}</ds>
+  </dslist>
+</form>
+

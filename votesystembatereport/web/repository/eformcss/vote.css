@@ -1,0 +1,94 @@
+/**********************************************
+ * vote CSS
+ * 
+ * @author yxl
+ * @date 2019-01-10
+ * @id ca21ba559e07fe17b00b75e0dd1925e1
+ *************************************************/
+/*����ͼƬ�޸�*/
+body {
+	background: url('../../logo/show.jpg'); /*�޸�ͼƬ���·��*/
+	text-align: center; /*ͼƬλ��*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /*�ײ�**��������ֱ�Ӹ��Ƽ���*/
+}
+
+.jqButton .jqButton-btn {
+	height: 200%;
+	font-size: 80px;
+	margin-top: 15%;
+	margin-left: 75%;
+	border-radius: 25%;
+	width: 80%;
+}
+
+ .jqButton .jqButton-btn{
+     border-radius: 34px;
+ }
+.jqGrid .jqColumnCheckBox, .jqGrid .jqGrid-td-check input {
+	width: 12%;
+	height: 40px;
+} /*ѡ��button*/
+/* div, span {
+    font-size: 120%;
+} */
+label {
+	font-size: 100%;
+}
+
+td {
+	font-size: 220%;
+	font-weight: 700;
+}
+
+jqGridcd761 {
+	margin-top: 17%;
+}
+
+.jqButton .jqButton-btn {
+	color:  #f6e070;
+	background-color: #bf1a20;
+	font-family: cursive;
+}
+
+#sn {
+	font-size: 20px;
+}
+
+.jqHtmlArea {
+	margin-left: 25%;
+	font-size: 40px;
+	margin-top: 3%;
+}
+
+table {
+	margin-top: 10%;
+}
+
+#jqButtonab045 {
+	height: 240%;
+	font-size: 36px;
+	margin-top: 15%;
+	margin-left: 0%;
+	-webkit-border-radius: 60%;
+}
+
+.jqGrid .jqGrid-head {
+	height: 45px;
+	padding: 4px;
+	background-color: #f2f5f9;
+	border-style: solid;
+	border-color: #e5e5e5;
+	border-width: 1px 1px 0px 0px;
+	line-height: 26px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 35px;
+	font-weight: 700;
+}
+.jqButton .jqButton-btn{
+     border-radius: 34px;
+}

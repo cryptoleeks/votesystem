@@ -1,0 +1,51 @@
+/**********************************************
+ * result CSS
+ * 
+ * @author yxl
+ * @date 2019-01-15
+ * @id 7409bde5ec66fe4e5b38085fe3a1f048
+ *************************************************/
+/* ��������ʽ */
+.container {
+    width: 510px;
+	border: 1px solid red;
+	height:  40px;
+	border-radius: 40px;
+}
+
+.bar {
+	background: yellow;
+	float: left;
+	height: 100%;
+	text-align: center;
+	line-height: 150%;
+	border-radius: 40px;
+}
+
+.total {
+	color: red;
+}
+
+#jqHtmlArea12ec2{
+	font-size: 80px;
+	color: yellow;
+	
+}
+.jqHtmlArea {
+         font-size: 35px;
+    font-family: cursive;
+    font-weight: 700;
+    margin-top: 3%;
+}
+/*����ͼƬ�޸�*/
+body {
+	background: url('../../logo/result.png'); /*�޸�ͼƬ���·��*/
+	text-align: center; /*ͼƬλ��*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-moz-background-size: cover;
+}
+table{
+	margin-top: 3%;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>822fb446e1bfed0b35c8edcd58cefaea</cid>
+  <key />
+  <tableName>program</tableName>
+  <showName>program</showName>
+  <desc />
+  <submitName />
+  <fields>
+    <field cid="d5344a136e05f1c8a22af4d27f5fb6b5" fieldName="pictureadr" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend required="false" maxLength="255" label="pictureadr" />
+    </field>
+    <field cid="ff8222ca426e234c47b72d7155d6650f" fieldName="programname" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend required="false" maxLength="255" label="programname" />
+    </field>
+    <field cid="aff7a4aa20099765b7675d001b082386" fieldName="programid" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend required="false" maxLength="255" label="programid" />
+    </field>
+  </fields>
+</table>
+

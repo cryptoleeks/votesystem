@@ -1,0 +1,87 @@
+/**********************************************
+ * admin CSS
+ * 
+ * @author ����
+ * @date 2019-01-09
+ * @id 3ef758846bdbfbf7572859ccfcb056a6
+ *************************************************/
+body {
+	background: url('../../logo/show.jpg'); /*修改图片相对路径*/
+	text-align: center; /*图片位置*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; /*底层**以上四行直接复制即可*/
+	/*    font-size:10em;*/
+	/* color: #000000; */
+}
+
+/* label, div, button, td, input, span {
+	font-size: 20px;
+} */
+
+/* .jqGrid .jqColumnCheckBox, .jqGrid .jqGrid-td-check input {
+	width: 30px;
+	height: 50px;
+} */
+
+.jqButton .jqButton-btn {
+	height: 240%;
+	font-size: 36px;
+	margin-top: 2%;
+    margin-left: 75%;
+    -webkit-border-radius: 400%;
+}
+#jqButtond48d1 button{
+	width: 260%;
+}/*选择投票个数button*/
+#jqButton0cb50 button{
+	width: 64%;
+    margin-top: 5%;
+    margin-left: 0%;
+}/*节目管理button*/
+#jqButtondf647 button{
+	    margin-top: 59%;
+    width: 130%;
+    margin-left: 94%;
+}/*开始投票button*/
+#jqButtona0bbd button{
+        margin-top: 59%;
+    margin-left: 214%;
+    width: 130%;
+}/*结束投票button*/
+.jqGrid .jqColumnCheckBox, .jqGrid .jqGrid-td-check input {
+    width: 20%;
+    height: 60px;
+}/*选择button*/
+div, span {
+    font-size: 150%;
+}
+label{
+	font-size:100%;
+}
+td {
+    font-size: 150%;
+}
+#jqButtonb970a button{
+	    width: 65%;
+    margin-top: 10%;
+    margin-left: 0%;
+}
+/*投票button*/
+#jqGrida2f7a{
+	margin-top: 17%;
+}
+
+.jqButton .jqButton-btn {
+	color: #0640c1;
+	background-color: #fd000099;
+}
+
+#sn {
+	font-size: 20px;
+}
+.jqHtmlArea {
+    margin-left: 25%;
+    font-size: 40px;
+    margin-top: 3%;
+}

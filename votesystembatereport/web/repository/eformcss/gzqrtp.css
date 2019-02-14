@@ -1,0 +1,43 @@
+/**********************************************
+ * ����ȷ��ͶƱ CSS
+ * 
+ * @author yxl
+ * @date 2019-01-12
+ * @id 861adab9f89342682b816c5b9ca94df5
+ *************************************************/
+.jqHtmlArea {
+    margin: 0% 25%;
+    font-size: 40px;
+    padding-top: 3%;
+    font-family: cursive;
+}
+.jqButton .jqButton-btn {
+    width: 180%;
+    height: 80px;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    color: #f6e070;
+    font-size: 30px;
+    line-height: 23px;
+    text-align: center;
+    vertical-align: middle;
+    background-color:#bf1a20 ;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    margin-left: 50%;
+    margin-top:75%;
+   
+}
+ .jqButton .jqButton-btn{
+     border-radius: 34px;
+ }
+#jqButtona89be{
+	    width: 80px;
+    margin-left: 210%;
+}
+.jqButton .jqButton-btn{
+     border-radius: 34px;
+}

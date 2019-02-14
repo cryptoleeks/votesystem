@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>f9a19f830ea09d173937ece1c202a9d6</id>
+  <configTable />
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Voteshow.java</javaLocation>
+  <jsLocation>repository/eformjs/voteshow.js</jsLocation>
+  <cssLocation>repository/eformcss/voteshow.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formf4145">
+      <id>formf4145</id>
+      <onLoadClient><![CDATA[formf4145_onLoadClient]]></onLoadClient>
+      <onLoadServer><![CDATA[formf4145_onLoadServer]]></onLoadServer>
+      <Items>
+        <jqHtmlArea sid="00ba42f0df4eba946ae6bbd5876c1811">
+          <id>jqHtmlArea60648</id>
+          <width>100%</width>
+          <height>100%</height>
+          <text>&lt;div id="container" style="height: 100%"&gt;&lt;/div&gt;&#xD;
+&lt;div id ="programname"&gt;&lt;/div&gt;&#xD;
+       &lt;script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"&gt;&lt;/script&gt;</text>
+        </jqHtmlArea>
+        <jqContainer sid="48199b7b81464151b90730caedf6ea9c">
+          <id>jqContainer608b5</id>
+          <Items>
+            <jqGrid sid="029f40c5d119caa06ecd2a93a4136692">
+              <id>jqGrid234dd</id>
+              <isPageSplit>false</isPageSplit>
+              <emptyDataTip />
+            </jqGrid>
+          </Items>
+        </jqContainer>
+      </Items>
+    </form>
+  </Item>
+</form>
+

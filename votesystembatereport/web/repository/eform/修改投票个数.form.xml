@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <id>99eb3c4abb57f109e80a5b4e58e93846</id>
+  <configTable>
+    <table table="admin" />
+  </configTable>
+  <defaultLocation>true</defaultLocation>
+  <visitRight />
+  <visitRightUpdate />
+  <visitRightInsert />
+  <visitRightDisplay />
+  <dynamicVisitRight />
+  <javaLocation>arteryServer.Xgtpgs.java</javaLocation>
+  <jsLocation>repository/eformjs/xgtpgs.js</jsLocation>
+  <cssLocation>repository/eformcss/xgtpgs.css</cssLocation>
+  <descript />
+  <needLogin>false</needLogin>
+  <Item version="2">
+    <form sid="formab9df">
+      <id>formab9df</id>
+      <onLoadClient><![CDATA[formab9df_onLoadClient]]></onLoadClient>
+      <onUnloadClient><![CDATA[formab9df_onUnloadClient]]></onUnloadClient>
+      <Items>
+        <jqFormArea sid="737714fb3d3973d70cfe66aca8c7ddfd">
+          <id>jqFormAreae64b3</id>
+          <colWidths>600</colWidths>
+          <labelWidth>30%</labelWidth>
+          <Items>
+            <jqInput sid="b83eb9c91ce044afad0e18dad3bb3ad3">
+              <id>jqInputselectnum</id>
+              <submitName>selectnumber</submitName>
+              <inherittbl>admin</inherittbl>
+              <inheritfld>selectnum</inheritfld>
+              <dataName>{rs1.selectnum}</dataName>
+              <emptyTip>请填写小于节目个数</emptyTip>
+              <required>true</required>
+              <rowSpan>2</rowSpan>
+              <label>观众投票个数</label>
+            </jqInput>
+          </Items>
+        </jqFormArea>
+        <jqButton sid="09f5090e9091f4bf100684f716df374e">
+          <id>jqButtond71e0</id>
+          <width>120</width>
+          <text>提交投票个数</text>
+          <linkto>{"formId":"3ef758846bdbfbf7572859ccfcb056a6","formName":"admin","formType":"1","runTimeType":"update","target":"_parent","targetWidth":"","targetHeight":"","targetLeft":"","targetTop":"","targetRight":"","targetBottom":"","modal":"2","resizable":"1","title":"","wincfg":"","fullScreen":"false","forceContextPath":"true"}</linkto>
+          <onShow><![CDATA[jqButtond71e0_onShow]]></onShow>
+          <onClickClient><![CDATA[jqButtond71e0_onClickClient]]></onClickClient>
+          <onClickServer><![CDATA[jqButtond71e0_onClickServer]]></onClickServer>
+        </jqButton>
+      </Items>
+    </form>
+  </Item>
+</form>
+

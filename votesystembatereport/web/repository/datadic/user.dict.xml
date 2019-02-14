@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table ver="2">
+  <cid>d7235149ed2740736f6f73cc893662b0</cid>
+  <key />
+  <tableName>user</tableName>
+  <showName>user</showName>
+  <desc />
+  <submitName />
+  <fields>
+    <field cid="64ef058ac09d16a024a6a4ec99d82ce7" fieldName="id" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend required="false" maxLength="255" label="id" />
+    </field>
+    <field cid="3b768e204a64af49dcb3f40b161c2880" fieldName="name" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend required="false" maxLength="255" label="name" />
+    </field>
+    <field cid="86fa8393fceb40762cfa8cc18a967023" fieldName="select" fieldType="text" dbmsType="varchar" pk="false" defaultValue="" unique="false">
+      <extend required="false" maxLength="255" label="select" />
+    </field>
+  </fields>
+</table>
+
